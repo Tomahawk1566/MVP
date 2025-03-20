@@ -24,7 +24,7 @@ public class RegistrationRequest {
         @Pattern(
                 regexp = "^(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).*$",
                 message = "Password must contain at least one special character (!@#$%^&* etc.)")
-        @Size(min = 8, message = "Password should have at least 8 symbols")
+        @Size(min = 8,max =25, message = "Password should have at least 8 symbols")
         private String password;
     }
 
